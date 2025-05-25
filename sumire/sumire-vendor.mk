@@ -728,7 +728,6 @@ PRODUCT_PACKAGES += \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
-    libllvd_smore \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
@@ -816,7 +815,6 @@ PRODUCT_PACKAGES += \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
-    libseemore \
     mm-qcamera-daemon \
     qseecomd \
     sensors.qcom
