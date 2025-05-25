@@ -5,6 +5,7 @@
 soong_namespace {
 	imports: [
 		"vendor/sony/sumire",
+	        "hardware/sony",
 	],
 }
 
@@ -17,17 +18,18 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/gps.default.so"],
+			srcs: ["proprietary//lib/hw/gps.default.so"],
 			shared_libs: ["libutils", "libcutils", "liblog", "libdl", "libc++", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/gps.default.so"],
+			srcs: ["proprietary//lib64/hw/gps.default.so"],
 			shared_libs: ["libutils", "libcutils", "liblog", "libdl", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	relative_install_path: "hw",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -39,16 +41,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libMiscTaAccessor.so"],
+			srcs: ["proprietary//lib/libMiscTaAccessor.so"],
 			shared_libs: ["libutils", "libmiscta", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libMiscTaAccessor.so"],
+			srcs: ["proprietary//lib64/libMiscTaAccessor.so"],
 			shared_libs: ["libutils", "libmiscta", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -60,16 +63,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/lib_asb_tee.so"],
+			srcs: ["proprietary//lib/lib_asb_tee.so"],
 			shared_libs: ["libutils", "libQSEEComAPI", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib_asb_tee.so"],
+			srcs: ["proprietary//lib64/lib_asb_tee.so"],
 			shared_libs: ["libutils", "libQSEEComAPI", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -81,16 +85,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudioresampler.so"],
+			srcs: ["proprietary//lib/libaudioresampler.so"],
 			shared_libs: ["libcutils", "libdl", "liblog", "libaudioutils", "libc++", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudioresampler.so"],
+			srcs: ["proprietary//lib64/libaudioresampler.so"],
 			shared_libs: ["libcutils", "libdl", "liblog", "libaudioutils", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -102,16 +107,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcredential-manager-service.so"],
+			srcs: ["proprietary/lib/libcredential-manager-service.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcredential-manager-service.so"],
+			srcs: ["proprietary/lib64/libcredential-manager-service.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -123,16 +129,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdevice_security.so"],
+			srcs: ["proprietary/lib/libdevice_security.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdevice_security.so"],
+			srcs: ["proprietary/lib64/libdevice_security.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -144,16 +151,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libloc_api_v02.so"],
+			srcs: ["proprietary//lib/libloc_api_v02.so"],
 			shared_libs: ["libutils", "libcutils", "libqmi_cci", "libqmi_common_so", "libdl", "libqmiservices", "libc++", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
+			srcs: ["proprietary//lib64/libloc_api_v02.so"],
 			shared_libs: ["libutils", "libcutils", "libqmi_cci", "libqmi_csi", "libqmi_common_so", "libloc_ds_api", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -165,16 +173,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libloc_ds_api.so"],
+			srcs: ["proprietary//lib/libloc_ds_api.so"],
 			shared_libs: ["libutils", "libcutils", "libqmi_cci", "libqmi_common_so", "libdsi_netctrl", "libqmiservices", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_ds_api.so"],
+			srcs: ["proprietary//lib64/libloc_ds_api.so"],
 			shared_libs: ["libutils", "libcutils", "libqmi_cci", "libqmi_csi", "libqmi_common_so", "libdsi_netctrl", "libqmiservices", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -186,16 +195,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmiscta.so"],
+			srcs: ["proprietary/lib/libmiscta.so"],
 			shared_libs: ["libutils", "liblog", "libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmiscta.so"],
+			srcs: ["proprietary/lib64/libmiscta.so"],
 			shared_libs: ["libutils", "liblog", "libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -207,16 +217,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libplstorage.so"],
+			srcs: ["proprietary//lib/libplstorage.so"],
 			shared_libs: ["liblog", "libmiscta", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libplstorage.so"],
+			srcs: ["proprietary//lib64/libplstorage.so"],
 			shared_libs: ["liblog", "libmiscta", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -228,16 +239,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libprotobuf-c.so"],
+			srcs: ["proprietary/lib/libprotobuf-c.so"],
 			shared_libs: ["libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libprotobuf-c.so"],
+			srcs: ["proprietary/lib64/libprotobuf-c.so"],
 			shared_libs: ["libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -249,16 +261,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libshims_boringssl.so"],
+			srcs: ["proprietary/lib/libshims_boringssl.so"],
 			shared_libs: ["libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libshims_boringssl.so"],
+			srcs: ["proprietary/lib64/libshims_boringssl.so"],
 			shared_libs: ["libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -270,16 +283,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsuntory.so"],
+			srcs: ["proprietary//lib/libsuntory.so"],
 			shared_libs: ["liblog", "libsuntory_utils", "libplstorage", "lib_asb_tee", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsuntory.so"],
+			srcs: ["proprietary//lib64/libsuntory.so"],
 			shared_libs: ["liblog", "libsuntory_utils", "libplstorage", "lib_asb_tee", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -291,16 +305,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsuntory_utils.so"],
+			srcs: ["proprietary//lib/libsuntory_utils.so"],
 			shared_libs: ["liblog", "libplstorage", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsuntory_utils.so"],
+			srcs: ["proprietary//lib64/libsuntory_utils.so"],
 			shared_libs: ["liblog", "libplstorage", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -312,16 +327,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsys-utils.so"],
+			srcs: ["proprietary//lib/libsys-utils.so"],
 			shared_libs: ["liblog", "libdl", "libgui", "libui", "libutils", "libc++", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsys-utils.so"],
+			srcs: ["proprietary//lib64/libsys-utils.so"],
 			shared_libs: ["liblog", "libdl", "libgui", "libui", "libutils", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -333,16 +349,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libta.so"],
+			srcs: ["proprietary/lib/libta.so"],
 			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libta.so"],
+			srcs: ["proprietary/lib64/libta.so"],
 			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -354,13 +371,14 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/soundfx/libsonypostprocbundle.so"],
+			srcs: ["proprietary//lib/soundfx/libsonypostprocbundle.so"],
 			shared_libs: ["libcutils", "liblog", "libtinyalsa", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
 	relative_install_path: "soundfx",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -372,13 +390,14 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/soundfx/libsonysweffect.so"],
+			srcs: ["proprietary//lib/soundfx/libsonysweffect.so"],
 			shared_libs: ["libaudioresampler", "libaudioutils", "libcutils", "liblog", "libdl", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
 	relative_install_path: "soundfx",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -390,12 +409,13 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib-preload64.so"],
+			srcs: ["proprietary/lib64/lib-preload64.so"],
 			shared_libs: ["liblog", "libc", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -404,10 +424,9 @@ cc_prebuilt_library_shared {
 	strip: {
 		none: true,
 	},
-	check_elf_files: false,
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libjni_latinimegoogle.so"],
+			srcs: ["proprietary/lib64/libjni_latinimegoogle.so"],
 			shared_libs: ["libc", "libm", "libstdc++", "libdl", ],
 		},
 	},
@@ -424,12 +443,13 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libtee.so"],
+			srcs: ["proprietary//lib64/libtee.so"],
 			shared_libs: ["lib_asb_tee", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -1235,6 +1255,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libmm-abl-oem",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -1252,11 +1275,13 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libmm-abl",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -1265,16 +1290,15 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmm-abl.so"],
-			shared_libs: ["liblog", "libmm-abl-oem", "libcutils", "libdiag", "libpowermanager", "libbinder", "libutils", "libtinyxml", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["liblog", "libmm-abl-oem", "libcutils", "libdiag", "libbinder", "libutils", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmm-abl.so"],
-			shared_libs: ["liblog", "libmm-abl-oem", "libcutils", "libdiag", "libpowermanager", "libbinder", "libutils", "libtinyxml", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["liblog", "libmm-abl-oem", "libcutils", "libdiag", "libbinder", "libutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -1296,7 +1320,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -1323,6 +1346,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libmm-qdcm",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -1331,16 +1357,15 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmm-qdcm.so"],
-			shared_libs: ["liblog", "libcutils", "libpowermanager", "libbinder", "libutils", "libtinyxml", "libmm-abl", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["liblog", "libcutils", "libbinder", "libutils", "libmm-abl", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmm-qdcm.so"],
-			shared_libs: ["liblog", "libcutils", "libpowermanager", "libbinder", "libutils", "libtinyxml", "libmm-abl", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["liblog", "libcutils", "libbinder", "libutils", "libmm-abl", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -1450,7 +1475,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2048,6 +2072,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2064,6 +2089,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2080,6 +2106,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2096,6 +2123,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2112,6 +2140,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2128,6 +2157,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2144,6 +2174,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2160,6 +2191,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2176,6 +2208,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2192,6 +2225,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2208,6 +2242,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2224,6 +2259,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -2321,16 +2357,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libpin-cache.so"],
+			srcs: ["proprietary/lib/libpin-cache.so"],
 			shared_libs: ["libtpm", "libcutils", "liblog", "libmiscta", "libstartup-reason", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libpin-cache.so"],
+			srcs: ["proprietary/lib64/libpin-cache.so"],
 			shared_libs: ["libtpm", "libcutils", "liblog", "libmiscta", "libstartup-reason", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2342,16 +2379,17 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstartup-reason.so"],
+			srcs: ["proprietary//lib/libstartup-reason.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libstartup-reason.so"],
+			srcs: ["proprietary//lib64/libstartup-reason.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2363,33 +2401,12 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libtpm.so"],
+			srcs: ["proprietary//lib/libtpm.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libmiscta", "libbinder", "libQSEEComAPI", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libtpm.so"],
+			srcs: ["proprietary//lib64/libtpm.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libmiscta", "libbinder", "libQSEEComAPI", "libc++", "libdl", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcne",
-	owner: "sony",
-	strip: {
-		none: true,
-	},
-	check_elf_files: false,
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcne.so"],
-			shared_libs: ["libbinder", "libcneqmiutils", "libcutils", "libdiag", "libqmi", "libnetutils", "libutils", "libcneapiclient", "libqmiservices", "libqmi_cci", "libdl", "libwpa_client", "libhardware_legacy", "libprotobuf-cpp-lite", "libc++", "libc", "libm", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcne.so"],
-			shared_libs: ["libbinder", "libcneqmiutils", "libcutils", "libdiag", "libqmi", "libnetutils", "libutils", "libcneapiclient", "libqmiservices", "libqmi_cci", "libdl", "libwpa_client", "libhardware_legacy", "libprotobuf-cpp-lite", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
@@ -2398,7 +2415,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libcne",
+
+    vendor_available: true,
+
+	owner: "sony",
+	strip: {
+		none: true,
+	},
+	check_elf_files: false,
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libcne.so"],
+			shared_libs: ["libbinder", "libcneqmiutils", "libcutils", "libdiag", "libqmi", "libnetutils", "libutils", "libcneapiclient", "libqmiservices", "libqmi_cci", "libdl", "libhardware_legacy", "libprotobuf-cpp-lite", "libc++", "libc", "libm", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libcne.so"],
+			shared_libs: ["libbinder", "libcneqmiutils", "libcutils", "libdiag", "libqmi", "libnetutils", "libutils", "libcneapiclient", "libqmiservices", "libqmi_cci", "libdl", "libhardware_legacy", "libprotobuf-cpp-lite", "libc++", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libcneapiclient",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2416,11 +2460,13 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libcneqmiutils",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2438,7 +2484,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2465,6 +2510,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libdiag",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2482,7 +2530,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2509,6 +2556,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libdsutils",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2526,11 +2576,13 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libidl",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2548,7 +2600,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2575,6 +2626,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libmdmdetect",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2592,7 +2646,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2685,6 +2738,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libqmi",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2702,11 +2758,13 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libqmi_cci",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2724,7 +2782,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2751,6 +2808,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libqmi_client_qmux",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2768,7 +2828,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2817,6 +2876,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libqmi_encdec",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2834,11 +2896,13 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libqmiservices",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2856,7 +2920,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -2891,11 +2954,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libril-qc-qmi-1.so"],
-			shared_libs: ["libdsutils", "libcutils", "libutils", "libril", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libmedia", "libbinder", "libmdmdetect", "libperipheral_client", "libsettings", "libsystem_health_mon", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpin-cache", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libdsutils", "libcutils", "libutils", "libril", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libbinder", "libmdmdetect", "libperipheral_client", "libsettings", "libsystem_health_mon", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpin-cache", "libc++", "libdl", "libc", "libm", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libril-qc-qmi-1.so"],
-			shared_libs: ["libdsutils", "libcutils", "libutils", "libril", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libmedia", "libbinder", "libmdmdetect", "libperipheral_client", "libsettings", "libsystem_health_mon", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpin-cache", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libdsutils", "libcutils", "libutils", "libril", "librilutils", "libril-qc-radioconfig", "libril-qc-ltedirectdisc", "libqmi_cci", "libqmi", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmiservices", "libqmi_client_helper", "libidl", "libtime_genoff", "libsqlite", "libbinder", "libmdmdetect", "libperipheral_client", "libsettings", "libsystem_health_mon", "libxml2", "libdsi_netctrl", "libqdp", "liblqe", "libpin-cache", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
@@ -2971,6 +3034,9 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libsmemlog",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -2988,7 +3054,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -3045,20 +3110,22 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwqe.so"],
-			shared_libs: ["libbinder", "libcutils", "libnetutils", "libutils", "libsqlite", "libcneapiclient", "libdl", "libwpa_client", "libcne", "libnl", "libxml", "libxml2", "libandroid", "libc++", "libc", "libm", ],
+			shared_libs: ["libbinder", "libcutils", "libnetutils", "libutils", "libsqlite", "libcneapiclient", "libdl", "libcne", "libnl", "libxml", "libxml2", "libandroid", "libc++", "libc", "libm", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwqe.so"],
-			shared_libs: ["libbinder", "libcutils", "libnetutils", "libutils", "libsqlite", "libcneapiclient", "libdl", "libwpa_client", "libcne", "libnl", "libxml", "libxml2", "libandroid", "libprotobuf-cpp-N", "libc++", "libc", "libm", ],
+			shared_libs: ["libbinder", "libcutils", "libnetutils", "libutils", "libsqlite", "libcneapiclient", "libdl", "libcne", "libnl", "libxml", "libxml2", "libandroid", "libprotobuf-cpp-N", "libc++", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libxml",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -3076,11 +3143,13 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
 	name: "libprotobuf-cpp-N",
+
+    vendor_available: true,
+
 	owner: "sony",
 	strip: {
 		none: true,
@@ -3094,7 +3163,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -3111,6 +3179,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -3127,6 +3196,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -3143,6 +3213,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -3159,6 +3230,7 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
