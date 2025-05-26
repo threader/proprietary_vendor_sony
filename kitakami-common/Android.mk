@@ -6,6 +6,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter ivy karin karin_windy satsuki sumire suzuran,$(TARGET_DEVICE)),)
 
+LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+
 ifeq ($(strip $(BOARD_NFC_CHIPSET)),pn547)
 endif
 endif

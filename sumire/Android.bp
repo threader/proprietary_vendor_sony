@@ -17,6 +17,8 @@ soong_namespace {
 cc_prebuilt_library_shared {
 	name: "fingerprint.msm8994",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -40,6 +42,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "lib_fpc_tac_shared",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -62,6 +66,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libcamera_clientsemc",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -87,6 +93,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -108,6 +116,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libcom_fingerprints_service",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -130,6 +140,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libidd",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -152,6 +164,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "liblights-core",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -174,6 +188,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_color_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -192,6 +208,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_debug_display_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -210,6 +228,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_exposure_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -228,6 +248,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_face_detector_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -246,6 +268,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_flicker_detector_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -264,6 +288,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_focus_stats_conv_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -282,6 +308,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_food_comp_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -300,6 +328,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_food_detector_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -318,6 +348,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_hal_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -336,6 +368,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_hdr_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -354,6 +388,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_idt_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -372,6 +408,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_image_conv_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -390,6 +428,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_iq_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -408,6 +448,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_jpeg_enc_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -426,6 +468,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_lens_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -444,6 +488,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_motion_estimation_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -462,6 +508,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_multiframe_nr_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -480,6 +528,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_object_tracker_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -498,6 +548,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_req_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -516,6 +568,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_scene_detector_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -534,6 +588,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_snapshot_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -552,6 +608,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_splitter_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -570,6 +628,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_stream_ctrl_plugin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -588,6 +648,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "camera.qcom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -609,6 +671,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -629,6 +693,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -646,6 +712,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libcacao_imgproc",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -666,6 +734,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -686,6 +756,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -706,6 +778,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -726,6 +800,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -746,6 +822,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -763,6 +841,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_legacy",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -780,6 +860,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_pal",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -798,6 +880,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libexcal_system",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -815,6 +899,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmm-qcamera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -836,6 +922,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -856,6 +944,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -876,6 +966,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -893,6 +985,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_alfort",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -915,6 +1009,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -932,6 +1028,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_bordeaux",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -954,6 +1052,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -971,6 +1071,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_canele",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -993,6 +1095,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1015,6 +1119,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1032,6 +1138,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_chokoballpal",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1049,6 +1157,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_marble",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1071,6 +1181,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1088,6 +1200,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_melonpan",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1110,6 +1224,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1127,6 +1243,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_mugichoco",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1149,6 +1267,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1166,6 +1286,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_raisin",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1188,6 +1310,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1205,6 +1329,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_spica",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1227,6 +1353,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1244,6 +1372,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_thermal",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1262,6 +1392,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_toppo",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1284,6 +1416,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1301,6 +1435,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsomc_yummy",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1323,6 +1459,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1345,6 +1483,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1367,6 +1507,8 @@ cc_prebuilt_library_shared {
     recovery_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1384,6 +1526,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libpn547_fw",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1403,6 +1547,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "lib-sec-disp",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1425,6 +1571,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libQSEEComAPI",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1447,6 +1595,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libStDrvInt",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1469,6 +1619,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libdataitems",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1491,6 +1643,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libdrmfs",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1513,6 +1667,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libdrmtime",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1538,6 +1694,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1562,6 +1720,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1586,6 +1746,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1607,6 +1769,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "librpmb",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1629,6 +1793,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsecureui",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1651,6 +1817,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsecureui_svcsock",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1673,6 +1841,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsensor1",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1695,6 +1865,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libsensor_reg",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1717,6 +1889,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libssd",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1739,6 +1913,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "sensors.ssc",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1761,6 +1937,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_ad5823",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1779,6 +1957,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_ad5823_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1797,6 +1977,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_ad5823_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1815,6 +1997,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_bu64244gwz",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1833,6 +2017,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_bu64244gwz_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1851,6 +2037,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_bu64244gwz_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1869,6 +2057,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9714",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1887,6 +2077,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9714_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1905,6 +2097,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9714_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1923,6 +2117,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9716",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1941,6 +2137,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9716_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1959,6 +2157,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9716_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1977,6 +2177,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9761b",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -1995,6 +2197,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9761b_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2013,6 +2217,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_dw9761b_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2031,6 +2237,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_lc898122",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2049,6 +2257,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_lc898122_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2067,6 +2277,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_lc898122_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2085,6 +2297,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_lc898212xd",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2103,6 +2317,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_lc898212xd_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2121,6 +2337,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_lc898212xd_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2139,6 +2357,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_ov8825",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2157,6 +2377,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_ov8825_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2175,6 +2397,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_ov8825_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2193,6 +2417,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_rohm_bu64243gwz",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2211,6 +2437,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_rohm_bu64243gwz_camcorder",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2229,6 +2457,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libactuator_rohm_bu64243gwz_camera",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2247,6 +2477,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_common",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2265,6 +2497,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_hfr_120",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2283,6 +2517,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_hfr_60",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2301,6 +2537,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_hfr_90",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2319,6 +2557,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_liveshot",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2337,6 +2577,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_preview",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2355,6 +2597,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_snapshot",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2373,6 +2617,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_video",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2391,6 +2637,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_cpp_video_4k",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2409,6 +2657,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_default_video",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2427,6 +2677,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_hfr_120",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2445,6 +2697,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_hfr_60",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2463,6 +2717,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_hfr_90",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2481,6 +2737,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_liveshot",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2499,6 +2757,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_postproc",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2517,6 +2777,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_preview",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2535,6 +2797,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_snapshot",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2553,6 +2817,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libchromatix_s5k3m2xx_video_4k",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2571,6 +2837,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libfastcvadsp_stub",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2589,6 +2857,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libflash_pmic",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2607,6 +2877,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libjpegdhw",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2625,6 +2897,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libjpegdmahw",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2643,6 +2917,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libjpegehw",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2664,6 +2940,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2684,6 +2962,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2701,6 +2981,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera2_frame_algorithm",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2722,6 +3004,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2742,6 +3026,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2762,6 +3048,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2782,6 +3070,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2802,6 +3092,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2822,6 +3114,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2842,6 +3136,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2862,6 +3158,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2882,6 +3180,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2902,6 +3202,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2919,6 +3221,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_cac2_lib",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2937,6 +3241,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_dw9761b_eeprom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2955,6 +3261,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_eeprom_util",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2976,6 +3284,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -2993,6 +3303,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_faceproc",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3011,6 +3323,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_hdr_gb_lib",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3032,6 +3346,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3049,6 +3365,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_imx258_gt24c16_eeprom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3067,6 +3385,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_abf44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3085,6 +3405,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_bcc44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3103,6 +3425,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_be_stats44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3121,6 +3445,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_bf_scale_stats46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3139,6 +3465,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_bf_stats44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3157,6 +3485,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_bg_stats46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3175,6 +3505,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_bhist_stats44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3193,6 +3525,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_bpc44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3211,6 +3545,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_chroma_enhan40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3229,6 +3565,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_chroma_suppress40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3247,6 +3585,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_clamp_encoder40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3265,6 +3605,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_clamp_video40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3283,6 +3625,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_clamp_viewfinder40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3301,6 +3645,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_clf46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3319,6 +3665,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_color_correct46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3337,6 +3685,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_color_xform_encoder46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3355,6 +3705,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_color_xform_video46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3373,6 +3725,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_color_xform_viewfinder46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3391,6 +3745,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_cs_stats46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3409,6 +3765,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_demosaic44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3427,6 +3785,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_demux40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3445,6 +3805,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_fovcrop_encoder46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3463,6 +3825,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_fovcrop_video46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3481,6 +3845,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_fovcrop_viewfinder46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3499,6 +3865,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_gamma44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3517,6 +3885,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_gic46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3535,6 +3905,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_gtm46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3553,6 +3925,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_hdr46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3571,6 +3945,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_hdr_be_stats46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3589,6 +3965,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_ihist_stats46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3607,6 +3985,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_linearization40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3625,6 +4005,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_ltm44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3643,6 +4025,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_mce40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3661,6 +4045,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_mesh_rolloff44",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3679,6 +4065,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_pedestal_correct46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3697,6 +4085,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_rs_stats46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3715,6 +4105,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_scaler_encoder46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3733,6 +4125,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_scaler_video46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3751,6 +4145,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_scaler_viewfinder46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3769,6 +4165,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_sce40",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3787,6 +4185,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_sub_module",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3805,6 +4205,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_isp_wb46",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3823,6 +4225,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_llvd",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3841,6 +4245,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_onsemi_cat24c32_eeprom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3859,6 +4265,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_ov4688_eeprom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3877,6 +4285,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_pdaf",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3895,6 +4305,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_pdaf_v3",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3913,6 +4325,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_pdafcamif",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3934,6 +4348,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3951,6 +4367,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_sony_imx214_eeprom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3969,6 +4387,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_sonyimx135_eeprom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -3987,6 +4407,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_stillmore_lib",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4005,6 +4427,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_tintless_algo",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4023,6 +4447,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_tintless_bg_pca_algo",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4041,6 +4467,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_trueportrait_lib",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4059,6 +4487,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmcamera_tuning",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4080,6 +4510,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4097,6 +4529,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmipl",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4115,6 +4549,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmjpeg",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4133,6 +4569,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmqjpeg_codec",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4151,6 +4589,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libmmqjpegdma",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4172,6 +4612,8 @@ cc_prebuilt_library_shared {
     vendor_available: true,
 
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4189,6 +4631,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libois_lc898122",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4207,6 +4651,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libqomx_jpegdec",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4225,6 +4671,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libqomx_jpegenc",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4243,6 +4691,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libqomx_jpegenc_pipe",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	strip: {
 		none: true,
 	},
@@ -4261,6 +4711,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_binary {
 	name: "mm-qcamera-daemon",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	target: {
 		android_arm: {
 			srcs: ["proprietary/bin/mm-qcamera-daemon"],
@@ -4277,6 +4729,8 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "qseecomd",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/bin/qseecomd"],
@@ -4294,6 +4748,8 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "sensors.qcom",
 	owner: "sony",
+	allow_undefined_symbols: true,
+
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/bin/sensors.qcom"],
